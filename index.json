@@ -1,30 +1,30 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-10T23:43:12Z",
+  "generated_at": "2026-03-10T23:44:50Z",
   "repository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-  "total_skills": 678,
+  "total_skills": 683,
   "total_domains": 1,
   "total_subdomains": 29,
   "domain_stats": {
-    "cybersecurity": 678
+    "cybersecurity": 683
   },
   "subdomain_stats": {
-    "digital-forensics": 35,
-    "security-operations": 33,
+    "digital-forensics": 36,
+    "security-operations": 34,
     "threat-intelligence": 48,
     "malware-analysis": 37,
-    "cloud-security": 52,
+    "cloud-security": 53,
     "soc-operations": 33,
     "mobile-security": 12,
     "container-security": 29,
     "phishing-defense": 16,
-    "network-security": 36,
+    "network-security": 37,
     "incident-response": 25,
     "red-teaming": 24,
     "devsecops": 16,
     "identity-access-management": 34,
     "vulnerability-management": 25,
-    "threat-hunting": 42,
+    "threat-hunting": 43,
     "web-application-security": 42,
     "penetration-testing": 23,
     "zero-trust-architecture": 13,
@@ -42,11 +42,11 @@
   "top_tags": [
     {
       "tag": "mitre-attack",
-      "count": 60
+      "count": 61
     },
     {
       "tag": "threat-hunting",
-      "count": 51
+      "count": 52
     },
     {
       "tag": "penetration-testing",
@@ -58,7 +58,7 @@
     },
     {
       "tag": "cloud-security",
-      "count": 38
+      "count": 39
     },
     {
       "tag": "owasp",
@@ -66,14 +66,14 @@
     },
     {
       "tag": "network-security",
+      "count": 36
+    },
+    {
+      "tag": "incident-response",
       "count": 35
     },
     {
       "tag": "soc",
-      "count": 33
-    },
-    {
-      "tag": "incident-response",
       "count": 33
     },
     {
@@ -1260,6 +1260,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/analyzing-windows-lnk-files-for-artifacts"
+    },
+    {
+      "name": "analyzing-windows-prefetch-with-python",
+      "description": "Parse Windows Prefetch files using the windowsprefetch Python library to reconstruct application execution history, detect renamed or masquerading binaries, and identify suspicious program execution patterns.",
+      "domain": "cybersecurity",
+      "subdomain": "digital-forensics",
+      "tags": [
+        "digital-forensics",
+        "windows",
+        "prefetch",
+        "execution-history",
+        "incident-response",
+        "malware-analysis"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-windows-prefetch-with-python"
     },
     {
       "name": "analyzing-windows-registry-for-artifacts",
@@ -3243,6 +3261,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/detecting-attacks-on-scada-systems"
+    },
+    {
+      "name": "detecting-aws-cloudtrail-anomalies",
+      "description": "Detect unusual API call patterns in AWS CloudTrail logs using boto3, statistical baselining, and behavioral analysis to identify credential compromise, privilege escalation, and unauthorized resource access.",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "cloud-security",
+        "aws",
+        "cloudtrail",
+        "anomaly-detection",
+        "threat-detection",
+        "boto3"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-aws-cloudtrail-anomalies"
     },
     {
       "name": "detecting-aws-credential-exposure-with-trufflehog",
@@ -5467,6 +5503,24 @@
       "path": "skills/hunting-for-dns-tunneling-with-zeek"
     },
     {
+      "name": "hunting-for-lateral-movement-via-wmi",
+      "description": "Detect WMI-based lateral movement by analyzing Windows Event ID 4688 process creation and Sysmon Event ID 1 for WmiPrvSE.exe child process patterns, remote process execution, and WMI event subscription persistence.",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "lateral-movement",
+        "wmi",
+        "sysmon",
+        "mitre-attack",
+        "process-creation"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/hunting-for-lateral-movement-via-wmi"
+    },
+    {
       "name": "hunting-for-living-off-the-cloud-techniques",
       "description": "Hunt for adversary abuse of legitimate cloud services for C2, data staging, and exfiltration including abuse of Azure, AWS, GCP services, and SaaS platforms.",
       "domain": "cybersecurity",
@@ -6675,6 +6729,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-end-to-end-encryption-for-messaging"
+    },
+    {
+      "name": "implementing-endpoint-detection-with-wazuh",
+      "description": "Deploy and configure Wazuh SIEM/XDR for endpoint detection including agent management, custom decoder and rule XML creation, alert querying via the Wazuh REST API, and automated response actions.",
+      "domain": "cybersecurity",
+      "subdomain": "security-operations",
+      "tags": [
+        "siem",
+        "xdr",
+        "wazuh",
+        "endpoint-detection",
+        "custom-rules",
+        "incident-response"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-endpoint-detection-with-wazuh"
     },
     {
       "name": "implementing-endpoint-dlp-controls",
@@ -11099,6 +11171,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-ssl-tls-inspection-configuration"
+    },
+    {
+      "name": "performing-ssl-tls-security-assessment",
+      "description": "Assess SSL/TLS server configurations using the sslyze Python library to evaluate cipher suites, certificate chains, protocol versions, HSTS headers, and known vulnerabilities like Heartbleed and ROBOT.",
+      "domain": "cybersecurity",
+      "subdomain": "network-security",
+      "tags": [
+        "network-security",
+        "ssl",
+        "tls",
+        "sslyze",
+        "certificate",
+        "cipher-suites",
+        "vulnerability-assessment"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-ssl-tls-security-assessment"
     },
     {
       "name": "performing-ssrf-vulnerability-exploitation",
