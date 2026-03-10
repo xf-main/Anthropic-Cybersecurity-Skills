@@ -1,31 +1,31 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-10T23:49:11Z",
+  "generated_at": "2026-03-10T23:49:32Z",
   "repository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-  "total_skills": 702,
+  "total_skills": 707,
   "total_domains": 1,
   "total_subdomains": 34,
   "domain_stats": {
-    "cybersecurity": 702
+    "cybersecurity": 707
   },
   "subdomain_stats": {
     "digital-forensics": 37,
-    "malware-analysis": 38,
+    "malware-analysis": 39,
     "security-operations": 34,
-    "threat-intelligence": 49,
+    "threat-intelligence": 50,
     "cloud-security": 56,
     "soc-operations": 33,
     "mobile-security": 12,
     "container-security": 29,
     "log-analysis": 1,
     "phishing-defense": 16,
-    "network-security": 37,
+    "network-security": 38,
     "incident-response": 25,
     "red-teaming": 24,
     "devsecops": 16,
     "identity-access-management": 34,
     "vulnerability-management": 25,
-    "threat-hunting": 47,
+    "threat-hunting": 48,
     "web-application-security": 42,
     "penetration-testing": 23,
     "zero-trust-architecture": 13,
@@ -33,7 +33,7 @@
     "endpoint-security": 16,
     "ot-ics-security": 28,
     "api-security": 28,
-    "threat-detection": 5,
+    "threat-detection": 6,
     "identity-security": 1,
     "ransomware-defense": 5,
     "deception-technology": 2,
@@ -770,6 +770,17 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/analyzing-malware-persistence-with-autoruns"
+    },
+    {
+      "name": "analyzing-malware-sandbox-evasion-techniques",
+      "description": "Detect sandbox evasion techniques in malware samples by analyzing timing checks, VM artifact queries, user interaction detection, and sleep inflation patterns from Cuckoo/AnyRun behavioral reports",
+      "domain": "cybersecurity",
+      "subdomain": "malware-analysis",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-malware-sandbox-evasion-techniques"
     },
     {
       "name": "analyzing-memory-dumps-with-volatility",
@@ -3853,6 +3864,17 @@
       "path": "skills/detecting-golden-ticket-attacks-in-kerberos-logs"
     },
     {
+      "name": "detecting-golden-ticket-forgery",
+      "description": "Detect Kerberos Golden Ticket forgery by analyzing Windows Event ID 4769 for RC4 encryption downgrades (0x17), abnormal ticket lifetimes, and krbtgt account anomalies in Splunk and Elastic SIEM",
+      "domain": "cybersecurity",
+      "subdomain": "threat-detection",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-golden-ticket-forgery"
+    },
+    {
       "name": "detecting-insider-data-exfiltration-via-dlp",
       "description": ">",
       "domain": "cybersecurity",
@@ -5691,6 +5713,17 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/hunting-for-dns-tunneling-with-zeek"
+    },
+    {
+      "name": "hunting-for-domain-fronting-c2-traffic",
+      "description": "Detect domain fronting C2 traffic by analyzing SNI vs HTTP Host header mismatches in proxy logs and TLS certificate discrepancies using pyOpenSSL for certificate inspection",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/hunting-for-domain-fronting-c2-traffic"
     },
     {
       "name": "hunting-for-lateral-movement-via-wmi",
@@ -7763,6 +7796,17 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-network-traffic-analysis-with-arkime"
+    },
+    {
+      "name": "implementing-network-traffic-baselining",
+      "description": "Build network traffic baselines from NetFlow/IPFIX data using Python pandas for statistical analysis, z-score anomaly detection, and hourly/daily traffic pattern profiling",
+      "domain": "cybersecurity",
+      "subdomain": "network-security",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-network-traffic-baselining"
     },
     {
       "name": "implementing-next-generation-firewall-with-palo-alto",
@@ -10894,6 +10938,17 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-open-source-intelligence-gathering"
+    },
+    {
+      "name": "performing-osint-with-spiderfoot",
+      "description": "Automate OSINT collection using SpiderFoot REST API and CLI for target profiling, module-based reconnaissance, and structured result analysis across 200+ data sources",
+      "domain": "cybersecurity",
+      "subdomain": "threat-intelligence",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-osint-with-spiderfoot"
     },
     {
       "name": "performing-ot-network-security-assessment",
