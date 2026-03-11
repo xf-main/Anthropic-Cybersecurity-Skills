@@ -127,6 +127,10 @@ skills/{skill-name}/
 
 We welcome contributions from the cybersecurity community. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new skills, improving existing ones, and our review process.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mukul975/Anthropic-Cybersecurity-Skills&type=Date)](https://star-history.com/#mukul975/Anthropic-Cybersecurity-Skills&Date)
+
 ## License
 
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat" alt="License"></a>
