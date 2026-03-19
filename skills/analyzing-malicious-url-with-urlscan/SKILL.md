@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 URLScan.io is a free service for scanning and analyzing suspicious URLs. It captures screenshots, DOM content, HTTP transactions, JavaScript behavior, and network connections of web pages in an isolated environment. This skill covers using URLScan's web interface and API to investigate phishing URLs, credential harvesting pages, and malicious redirects without exposing the analyst's system to risk.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing malicious url with urlscan
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 - URLScan.io account (free tier available, API key for automation)
 - Python 3.8+ with requests library

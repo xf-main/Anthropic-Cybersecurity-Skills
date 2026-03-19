@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Cisco Identity Services Engine (ISE) provides centralized network access control through 802.1X authentication, MAC Authentication Bypass (MAB), posture assessment, and guest access management. ISE acts as a RADIUS policy server that evaluates authentication requests from network devices (switches, wireless controllers) and returns authorization policies including VLAN assignments, downloadable ACLs (dACLs), and Security Group Tags (SGTs). This skill covers deploying ISE for enterprise wired 802.1X authentication with Active Directory integration, MAB fallback, posture compliance enforcement, and TrustSec segmentation.
 
+
+## When to Use
+
+- When deploying or configuring implementing network access control with cisco ise capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Cisco ISE 3.1+ appliance or virtual machine (16 CPU cores, 64GB RAM minimum for production)

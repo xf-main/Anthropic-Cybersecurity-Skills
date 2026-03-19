@@ -24,6 +24,14 @@ PowerShell. Combined with Module Logging (4103) and process creation events, ana
 detect encoded commands, AMSI bypass patterns, download cradles, credential theft tools,
 and fileless attack techniques even when the attacker uses obfuscation layers.
 
+
+## When to Use
+
+- When investigating security incidents that require hunting for anomalous powershell execution
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Windows Event Log exports (.evtx) from Microsoft-Windows-PowerShell/Operational

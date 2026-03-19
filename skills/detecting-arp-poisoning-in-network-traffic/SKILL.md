@@ -15,6 +15,14 @@ license: Apache-2.0
 
 ARP poisoning (ARP spoofing) is a Layer 2 attack where an adversary sends falsified ARP messages to associate their MAC address with the IP address of a legitimate host, enabling man-in-the-middle (MitM) interception, session hijacking, or denial of service. Since ARP has no built-in authentication mechanism, any device on a broadcast domain can forge ARP replies. Detection requires monitoring ARP traffic for anomalies such as gratuitous ARP floods, IP-to-MAC mapping changes, and duplicate IP addresses. This skill covers deploying multiple detection layers including ARPWatch, Dynamic ARP Inspection (DAI), Wireshark-based analysis, and custom Python monitoring tools.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting arp poisoning in network traffic
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Access to the target network segment (broadcast domain)

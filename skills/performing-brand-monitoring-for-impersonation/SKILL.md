@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Brand impersonation attacks exploit consumer trust through lookalike domains, fake social media profiles, counterfeit mobile apps, and phishing sites that mimic legitimate brands. In 2025, brand impersonation remained one of the most costly cyber threats, with AI-generated phishing emails achieving a 54% click-through rate. This skill covers building a comprehensive brand monitoring program that detects domain squatting, social media impersonation, fake mobile apps, unauthorized logo usage, and dark web brand mentions using automated scanning and alerting.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing brand monitoring for impersonation
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `dnstwist`, `requests`, `beautifulsoup4`, `Levenshtein`, `tweepy` libraries

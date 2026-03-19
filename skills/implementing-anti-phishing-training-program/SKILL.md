@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Security awareness training is the human layer of phishing defense. An effective anti-phishing training program combines regular simulations, interactive learning modules, metric tracking, and positive reinforcement to build a security-conscious culture. This skill covers designing, deploying, and measuring a comprehensive phishing awareness program using platforms like KnowBe4, Proofpoint Security Awareness, and open-source alternatives.
 
+
+## When to Use
+
+- When deploying or configuring implementing anti phishing training program capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Management buy-in and budget approval
 - Security awareness training platform (KnowBe4, Proofpoint SAT, Cofense)

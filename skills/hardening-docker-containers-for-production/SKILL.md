@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Hardening Docker containers for production involves applying security best practices aligned with CIS Docker Benchmark v1.8.0 to minimize attack surface, prevent privilege escalation, and enforce least-privilege principles across Docker daemon, images, containers, and runtime configurations.
 
+
+## When to Use
+
+- When deploying or configuring hardening docker containers for production capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Docker Engine 24.0+ installed

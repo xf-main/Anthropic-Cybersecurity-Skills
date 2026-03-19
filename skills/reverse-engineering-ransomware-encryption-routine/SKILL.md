@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Modern ransomware uses hybrid encryption combining symmetric algorithms (AES-256-CBC/CTR, ChaCha20, Salsa20) for file encryption with asymmetric algorithms (RSA-2048/4096, Curve25519) for key protection. The encryption routine typically generates a random symmetric key per file, encrypts file contents, then encrypts the symmetric key with the attacker's embedded public key. Reverse engineering these routines identifies the specific algorithms, key derivation methods, initialization vectors, file targeting patterns, and potential implementation flaws that could enable decryption without paying the ransom. Notable examples include Rhysida (AES-256-CTR + RSA-4096), Qilin.B (AES-256-CTR with AES-NI or ChaCha20 fallback), and Medusa (AES-256 + RSA).
 
+
+## When to Use
+
+- When performing authorized security testing that involves reverse engineering ransomware encryption routine
+- When analyzing malware samples or attack artifacts in a controlled environment
+- When conducting red team exercises or penetration testing engagements
+- When building detection capabilities based on offensive technique understanding
+
 ## Prerequisites
 
 - IDA Pro or Ghidra for static disassembly

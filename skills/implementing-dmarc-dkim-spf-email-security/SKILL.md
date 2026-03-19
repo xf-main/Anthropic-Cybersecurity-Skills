@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 SPF, DKIM, and DMARC form the three pillars of email authentication. Together they prevent domain spoofing, validate message integrity, and define policies for handling unauthenticated mail. Proper implementation drastically reduces phishing attacks that impersonate your organization's domain.
 
+
+## When to Use
+
+- When deploying or configuring implementing dmarc dkim spf email security capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - DNS management access for your domain
 - Access to email server/MTA configuration (Postfix, Exchange, Google Workspace, Microsoft 365)

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Cobalt Strike is a commercial adversary simulation tool widely abused by threat actors for post-exploitation operations. Beacon payloads contain embedded configuration data that reveals C2 server addresses, communication protocols, sleep intervals, jitter values, malleable C2 profile settings, watermark identifiers, and encryption keys. Extracting this configuration from PE files, shellcode, or memory dumps is critical for incident responders to map attacker infrastructure and attribute campaigns. The beacon configuration is XOR-encoded using a single byte (0x69 for version 3, 0x2e for version 4) and stored in a Type-Length-Value (TLV) format within the .data section.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing cobalt strike beacon configuration
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `dissect.cobaltstrike`, `pefile`, `yara-python`

@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Rapid7 InsightVM (formerly Nexpose) is an enterprise vulnerability management platform that combines on-premises scanning via Security Console and Scan Engines with cloud-based analytics through the Insight Platform. InsightVM leverages Rapid7's vulnerability research library, Metasploit exploit knowledge, global attacker behavior data, internet-wide scanning telemetry, and real-time reporting to provide comprehensive vulnerability visibility. This skill covers deploying the Security Console, configuring Scan Engines, setting up scan templates, credentialed scanning, and integrating with the Insight Agent for continuous assessment.
 
+
+## When to Use
+
+- When deploying or configuring implementing rapid7 insightvm for scanning capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Server meeting minimum requirements: 16 GB RAM, 4 CPU cores, 500 GB disk (Security Console)
 - Scan Engine: 8 GB RAM, 4 CPU cores, 100 GB disk

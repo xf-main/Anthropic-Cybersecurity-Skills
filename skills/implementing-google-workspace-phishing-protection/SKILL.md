@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Google Workspace provides advanced phishing and malware protection through the Admin Console under Apps > Google Workspace > Gmail > Safety. Key features include Enhanced Pre-Delivery Scanning that examines messages more thoroughly before they reach inboxes, attachment and link protection that scans for malware and checks against known malicious sites, and spoofing detection for domain and employee name impersonation. Google's Advanced Protection Program (APP) provides the strongest account security for high-privilege users.
 
+
+## When to Use
+
+- When deploying or configuring implementing google workspace phishing protection capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Google Workspace Business Standard or higher license
 - Gmail Settings administrator privilege

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 This skill covers Google Cloud Platform security testing using GCPBucketBrute for storage bucket enumeration and access permission testing, combined with gcloud CLI IAM enumeration to identify privilege escalation paths. The approach tests for publicly accessible buckets, overly permissive IAM bindings, and service account key exposure.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing gcp penetration testing with gcpbucketbrute
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.8+ with google-cloud-storage library

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Volatility3 (v2.26.0+, feature parity release May 2025) is the standard framework for memory forensics, replacing the deprecated Volatility2. It analyzes RAM dumps from Windows, Linux, and macOS to detect malicious processes, code injection, rootkits, credential harvesting, and network connections that disk-based forensics cannot reveal. Key plugins include `windows.malfind` (detecting RWX memory regions indicating injection), `windows.psscan` (finding hidden processes), `windows.dlllist` (enumerating loaded modules), `windows.netscan` (active network connections), and `windows.handles` (open file/registry handles). The 2024 Plugin Contest introduced ETW Scan for extracting Event Tracing for Windows data from memory.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing memory forensics with volatility3 plugins
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `volatility3` framework installed

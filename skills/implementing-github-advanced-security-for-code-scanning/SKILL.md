@@ -15,6 +15,14 @@ license: Apache-2.0
 
 GitHub Advanced Security (GHAS) integrates CodeQL-powered static application security testing directly into the GitHub development workflow. CodeQL treats code as data, enabling semantic analysis that identifies security vulnerabilities such as SQL injection, cross-site scripting, buffer overflows, and authentication flaws with significantly fewer false positives than traditional pattern-matching scanners. GHAS encompasses code scanning, secret scanning, dependency review, and Dependabot alerts to provide a comprehensive security posture for repositories.
 
+
+## When to Use
+
+- When deploying or configuring implementing github advanced security for code scanning capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - GitHub Enterprise Cloud or GitHub Enterprise Server 3.0+ with GHAS license

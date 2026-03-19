@@ -14,6 +14,14 @@ license: Apache-2.0
 ## Overview
 ISO/IEC 27001:2022 is the international standard for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). This skill covers the complete lifecycle from scoping through certification, including Annex A control selection, risk assessment methodology, Statement of Applicability (SoA) creation, and continuous improvement processes.
 
+
+## When to Use
+
+- When deploying or configuring implementing iso 27001 information security management capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Understanding of information security principles and risk management concepts
 - Familiarity with organizational governance structures and business processes

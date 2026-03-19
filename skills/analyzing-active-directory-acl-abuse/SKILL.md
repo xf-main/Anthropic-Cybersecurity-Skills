@@ -18,6 +18,14 @@ Active Directory Access Control Lists (ACLs) define permissions on AD objects th
 
 This skill uses the ldap3 Python library to connect to a Domain Controller, query objects with their nTSecurityDescriptor attribute, parse the binary security descriptor into SDDL (Security Descriptor Definition Language) format, and identify ACEs that grant dangerous permissions to non-administrative principals. These misconfigurations are the basis for ACL-based attack paths discovered by tools like BloodHound.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing active directory acl abuse
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9 or later with ldap3 library (`pip install ldap3`)

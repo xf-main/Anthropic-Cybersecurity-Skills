@@ -15,6 +15,14 @@ license: Apache-2.0
 
 DNS exfiltration exploits the Domain Name System as a covert channel to extract data from compromised networks. Attackers encode stolen data into DNS query names (subdomains) or DNS response records (TXT, CNAME, NULL), bypassing traditional security controls that typically allow DNS traffic unrestricted. Tools like iodine, dnscat2, and dns2tcp enable full TCP tunneling over DNS. Detection requires analyzing DNS query patterns for anomalies including excessive query length, high entropy subdomain strings, abnormal query volumes to single domains, and oversized TXT record responses. This skill covers building a comprehensive DNS exfiltration detection capability using passive DNS analysis, statistical methods, and machine learning approaches.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting dns exfiltration with dns query analysis
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Access to DNS query logs (passive DNS capture, DNS server logs, or PCAP)

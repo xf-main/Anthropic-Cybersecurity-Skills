@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, and staging servers. This skill covers using passive DNS, certificate transparency logs, Shodan/Censys scanning, WHOIS analysis, and network fingerprinting to discover, track, and pivot across threat actor infrastructure over time.
 
+
+## When to Use
+
+- When managing security operations that require tracking threat actor infrastructure
+- When improving security program maturity and operational processes
+- When establishing standardized procedures for security team workflows
+- When integrating threat intelligence or vulnerability data into operations
+
 ## Prerequisites
 
 - Python 3.9+ with `shodan`, `censys`, `requests`, `stix2` libraries

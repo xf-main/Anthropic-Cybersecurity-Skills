@@ -18,6 +18,14 @@ This skill covers implementing automated secrets scanning in CI/CD pipelines usi
 
 Gitleaks scans git repositories and directories for hardcoded secrets using regex patterns and entropy analysis. TruffleHog performs filesystem and git history scans with optional secret verification against live services. Together they provide comprehensive coverage for secrets detection.
 
+
+## When to Use
+
+- When deploying or configuring implementing secrets scanning in ci cd capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9 or later

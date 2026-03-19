@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Hardware Security Modules (HSMs) provide tamper-resistant cryptographic key storage and operations. This skill covers integrating with HSMs via the PKCS#11 standard interface using python-pkcs11, performing key generation, signing, encryption, and verification operations, querying token and slot information, and validating HSM configuration for compliance with FIPS 140-2/3 requirements.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing hardware security module integration
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - HSM device or software HSM (SoftHSM2 for testing)

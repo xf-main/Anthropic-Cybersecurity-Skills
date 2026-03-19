@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 GoPhish is an open-source phishing simulation framework used by security teams to conduct authorized phishing awareness campaigns. It provides campaign management, email template creation, landing page cloning, and comprehensive reporting. This skill covers deploying GoPhish, creating realistic phishing scenarios, and analyzing campaign results to measure and improve organizational resilience.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing phishing simulation with gophish
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - GoPhish binary or Docker image (https://github.com/gophish/gophish)
 - SMTP server or relay for sending test emails

@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Domain-based Message Authentication, Reporting and Conformance (DMARC) is the cornerstone of email anti-spoofing protection. A DMARC rollout progresses through three phases: monitoring (p=none), quarantine (p=quarantine), and full enforcement (p=reject). When configured at p=reject, any email that fails both SPF and DKIM checks is outright rejected. Google and Yahoo now require DMARC for bulk senders (5,000+ emails), driving a 65% reduction in unauthenticated messages. The rollout typically takes 3-6 months for safe deployment.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing dmarc policy enforcement rollout
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - Administrative access to DNS management for the domain
 - Understanding of SPF, DKIM, and DMARC protocols (RFC 7208, 6376, 7489)

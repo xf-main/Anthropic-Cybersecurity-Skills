@@ -26,6 +26,14 @@ This skill covers building detection rules that correlate these events to identi
 malicious scheduled tasks created from suspicious paths, with encoded payloads, or
 targeting remote systems.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting malicious scheduled tasks with sysmon
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Sysmon installed with a detection-focused configuration (e.g., SwiftOnSecurity or Olaf Hartong)

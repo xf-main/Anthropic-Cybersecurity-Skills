@@ -15,6 +15,14 @@ license: Apache-2.0
 
 This skill covers configuring Fluentd and Fluent Bit for centralized log collection, routing, and enrichment. Fluent Bit acts as a lightweight log forwarder on endpoints, while Fluentd serves as the central aggregator and processor. The configuration covers input plugins for syslog, file tailing, and application logs, with output routing to Elasticsearch, S3, and Splunk.
 
+
+## When to Use
+
+- When deploying or configuring implementing log forwarding with fluentd capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Fluentd (td-agent) v1.16+ or Fluent Bit v3.0+

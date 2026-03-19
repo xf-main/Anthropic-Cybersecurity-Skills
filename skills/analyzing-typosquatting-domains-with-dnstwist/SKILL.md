@@ -14,6 +14,14 @@ license: Apache-2.0
 
 DNSTwist is a domain name permutation engine that generates similar-looking domain names to detect typosquatting, homograph phishing attacks, and brand impersonation. It creates thousands of domain permutations using techniques like character substitution, transposition, insertion, omission, and homoglyph replacement, then checks DNS records (A, AAAA, NS, MX), calculates web page similarity using fuzzy hashing (ssdeep) and perceptual hashing (pHash), and identifies potentially malicious registered domains.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing typosquatting domains with dnstwist
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `dnstwist` installed (`pip install dnstwist[full]`)

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Access recertification (also called access certification or access review) is a periodic process where designated reviewers validate that users have appropriate access to systems and data. Saviynt Enterprise Identity Cloud (EIC) automates this process through certification campaigns that present reviewers with current access assignments and collect approve/revoke/conditionally-certify decisions. Campaigns can be triggered on schedule (quarterly, semi-annually), event-driven (department transfer, role change), or on-demand. Saviynt provides intelligence features including risk scoring, usage analytics, and peer-group analysis to help reviewers make informed decisions.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing access recertification with saviynt
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Saviynt Enterprise Identity Cloud (EIC) tenant with admin access

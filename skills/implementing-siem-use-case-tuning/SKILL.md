@@ -22,6 +22,14 @@ license: Apache-2.0
 
 SIEM use case tuning reduces alert fatigue by systematically analyzing detection rules for false positive rates, adjusting thresholds based on environmental baselines, creating context-aware whitelists, and measuring detection efficacy through precision/recall metrics. This skill covers tuning workflows for Splunk correlation searches and Elastic detection rules, including statistical baselining, exclusion list management, and alert-to-incident conversion tracking.
 
+
+## When to Use
+
+- When deploying or configuring implementing siem use case tuning capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Splunk Enterprise/Cloud with ES or Elastic SIEM with detection rules enabled

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Canary Tokens are lightweight tripwire mechanisms that alert when an attacker accesses a resource. This skill uses the Thinkst Canary REST API to programmatically create tokens (web bugs, DNS tokens, MS Word documents, AWS API keys), deploy them to strategic locations, monitor for triggered alerts, and generate deception coverage reports.
 
+
+## When to Use
+
+- When deploying or configuring implementing deception based detection with canarytoken capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Thinkst Canary Console or canarytokens.org account

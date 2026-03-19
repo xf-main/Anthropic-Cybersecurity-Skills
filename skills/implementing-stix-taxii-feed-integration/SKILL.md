@@ -14,6 +14,14 @@ license: Apache-2.0
 
 STIX (Structured Threat Information eXpression) and TAXII (Trusted Automated eXchange of Intelligence Information) are OASIS open standards for representing and transporting cyber threat intelligence. This skill covers implementing a STIX/TAXII 2.1 feed consumer and producer using Python, configuring TAXII server discovery, collection management, polling for new intelligence, parsing STIX 2.1 objects, and integrating feeds into SIEM and TIP platforms.
 
+
+## When to Use
+
+- When deploying or configuring implementing stix taxii feed integration capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9+ with `taxii2-client`, `stix2`, `cti-taxii-client` libraries

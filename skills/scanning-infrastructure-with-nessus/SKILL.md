@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Tenable Nessus is the industry-leading vulnerability scanner used to identify security weaknesses across network infrastructure including servers, workstations, network devices, and operating systems. This skill covers configuring scan policies, running authenticated and unauthenticated scans, interpreting results, and integrating Nessus into continuous vulnerability management workflows.
 
+
+## When to Use
+
+- When conducting security assessments that involve scanning infrastructure with nessus
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - Nessus Professional or Essentials license installed and activated
 - Network access to target systems (firewall rules allowing scanner IP)

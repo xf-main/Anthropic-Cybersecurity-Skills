@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Pod Security Standards (PSS) define three levels of security policies -- Privileged, Baseline, and Restricted -- enforced by the Pod Security Admission (PSA) controller built into Kubernetes 1.25+. PSA replaces the deprecated PodSecurityPolicy and provides namespace-level enforcement with three modes: enforce, audit, and warn.
 
+
+## When to Use
+
+- When deploying or configuring implementing kubernetes pod security standards capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Kubernetes cluster 1.25+ (PSA GA)

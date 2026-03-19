@@ -14,6 +14,14 @@ license: Apache-2.0
 
 YARA is the pattern matching swiss knife for malware researchers, enabling identification and classification of malware based on textual or binary patterns. Effective YARA rules combine unique string patterns, byte sequences, PE header characteristics, import table analysis, and conditional logic to detect malware families while avoiding false positives. Modern YARA-X (rewritten in Rust, stable since June 2025) brings improved performance and new modules. Rules should target unpacked malware artifacts like hardcoded stack strings, C2 URLs, mutex names, encryption constants, and unique code sequences rather than packer signatures.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing yara rule development for detection
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `yara-python` library

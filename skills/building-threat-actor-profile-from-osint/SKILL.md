@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Threat actor profiling using OSINT systematically gathers and analyzes publicly available information to build comprehensive profiles of adversary groups. This skill covers collecting intelligence from public sources (security vendor reports, paste sites, dark web forums, social media, code repositories), correlating indicators across platforms, mapping adversary infrastructure using tools like Maltego and SpiderFoot, and producing structured threat actor dossiers that inform defensive strategies and attribution assessments.
 
+
+## When to Use
+
+- When deploying or configuring building threat actor profile from osint capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9+ with `shodan`, `requests`, `beautifulsoup4`, `maltego-trx`, `stix2` libraries

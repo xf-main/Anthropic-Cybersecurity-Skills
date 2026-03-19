@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Living Off the Land Binaries, Scripts, and Libraries (LOLBAS) are legitimate system utilities abused by attackers to execute malicious actions while evading detection. This skill covers detecting abuse of certutil.exe, regsvr32.exe, mshta.exe, rundll32.exe, msbuild.exe, and other LOLBins using process telemetry from Sysmon and Windows Event Logs, combined with Sigma rule-based detection.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting living off the land with lolbas
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Sysmon or Windows Security Event Log (Event ID 4688) with command-line logging enabled

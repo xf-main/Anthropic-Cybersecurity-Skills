@@ -14,6 +14,14 @@ license: Apache-2.0
 ## Overview
 The General Data Protection Regulation (EU) 2016/679 (GDPR) is the EU's comprehensive data protection law governing the collection, processing, storage, and transfer of personal data. This skill covers implementing the technical and organizational measures required by GDPR, including data protection by design and by default, Data Protection Impact Assessments (DPIAs), data subject rights management, breach notification procedures, and cross-border data transfer mechanisms.
 
+
+## When to Use
+
+- When deploying or configuring implementing gdpr data protection controls capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Understanding of EU data protection law and its territorial scope
 - Knowledge of personal data processing activities within the organization

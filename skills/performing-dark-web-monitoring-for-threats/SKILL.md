@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Dark web monitoring involves systematically scanning Tor hidden services, underground forums, paste sites, and dark web marketplaces to identify threats targeting an organization, including leaked credentials, data breaches, threat actor discussions, vulnerability exploitation tools, and planned attacks. This skill covers setting up monitoring infrastructure, using Tor-based collection tools, implementing automated alerting for brand mentions and credential leaks, and analyzing dark web intelligence for actionable threat indicators.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing dark web monitoring for threats
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Tor Browser and Tor proxy (SOCKS5 on port 9050)

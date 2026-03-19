@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 AI-powered BEC detection uses machine learning, NLP, and behavioral analytics to identify sophisticated impersonation attacks that contain no malicious links or attachments. Traditional rule-based filters miss these attacks because BEC relies purely on social engineering. Modern AI approaches analyze writing style, tone, vocabulary, grammatical patterns, and behavioral context to determine if an email genuinely comes from the stated sender. BERT-based models achieve 98.65% accuracy in BEC detection, and AI-enhanced platforms show a 25% increase in phishing identification over keyword-based rules.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting business email compromise with ai
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 - AI-powered email security platform (Abnormal Security, Tessian, Microsoft Defender)
 - Historical email data for baseline training (minimum 30 days)

@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Spearphishing targets specific individuals using personalized, researched content that bypasses generic spam filters. Email security gateways (SEGs) like Microsoft Defender for Office 365, Proofpoint, Mimecast, and Barracuda provide advanced detection capabilities including behavioral analysis, URL detonation, attachment sandboxing, and impersonation detection. This skill covers configuring these gateways to detect and block targeted phishing attacks.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting spearphishing with email gateway
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 - Access to email security gateway admin console
 - Understanding of email flow architecture (MX records, transport rules)

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Indicator lifecycle management tracks IOCs from initial discovery through validation, enrichment, deployment, monitoring, and eventual retirement. This skill covers implementing systematic processes for IOC quality assessment, aging policies, confidence scoring decay, false positive tracking, hit-rate monitoring, and automated expiration to maintain a high-quality, actionable indicator database that minimizes analyst fatigue and maximizes detection efficacy.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing indicator lifecycle management
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `pymisp`, `requests`, `stix2` libraries

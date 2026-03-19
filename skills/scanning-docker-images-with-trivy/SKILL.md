@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Trivy is a comprehensive open-source vulnerability scanner by Aqua Security that detects vulnerabilities in OS packages, language-specific dependencies, misconfigurations, secrets, and license violations within container images. It integrates into CI/CD pipelines and supports multiple output formats including SARIF, CycloneDX, and SPDX.
 
+
+## When to Use
+
+- When conducting security assessments that involve scanning docker images with trivy
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Docker Engine 20.10+

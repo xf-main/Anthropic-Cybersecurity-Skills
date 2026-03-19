@@ -15,6 +15,14 @@ license: Apache-2.0
 
 This skill automates packet capture analysis using tshark (Wireshark CLI) and pyshark (Python wrapper). It extracts protocol distribution statistics, identifies suspicious network flows (port scans, beaconing, data exfiltration), extracts IOCs (IPs, domains, URLs), and detects DNS tunneling patterns from PCAP files.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing network traffic analysis with tshark
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - tshark (Wireshark CLI) installed and in PATH

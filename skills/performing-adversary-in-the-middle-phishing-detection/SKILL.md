@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Adversary-in-the-Middle (AiTM) phishing attacks use reverse-proxy infrastructure to sit between the victim and the legitimate authentication service, intercepting both credentials and session cookies in real time. This allows attackers to bypass multi-factor authentication (MFA). The most prevalent PhaaS kits in 2025 include Tycoon 2FA, Sneaky 2FA, EvilProxy, and Evilginx. Over 1 million PhaaS attacks were detected in January-February 2025 alone. These attacks have evolved from QR codes to HTML attachments and SVG files for link distribution.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing adversary in the middle phishing detection
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - Azure AD / Entra ID Conditional Access policies
 - SIEM with authentication log ingestion (Azure AD sign-in logs)

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 IAM permission boundaries are an advanced AWS feature that sets the maximum permissions an identity-based policy can grant to an IAM entity (user or role). They enable centralized security teams to safely delegate IAM role and policy creation to application developers without risking privilege escalation. The effective permissions of an entity are the intersection of its identity-based policies and its permission boundary -- even if an identity policy grants `AdministratorAccess`, the permission boundary restricts it to only the allowed actions.
 
+
+## When to Use
+
+- When deploying or configuring implementing aws iam permission boundaries capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - AWS account with IAM administrative access

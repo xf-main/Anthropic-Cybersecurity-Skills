@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Business Email Compromise (BEC) is a sophisticated fraud scheme where attackers impersonate executives, vendors, or trusted partners to trick employees into transferring funds, sharing sensitive data, or changing payment details. Unlike traditional phishing, BEC often contains no malicious links or attachments, relying purely on social engineering. This skill covers detection techniques using email gateway rules, behavioral analytics, and financial process controls.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting business email compromise
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 - Email security gateway with BEC detection capabilities
 - Understanding of organizational financial processes and approval chains

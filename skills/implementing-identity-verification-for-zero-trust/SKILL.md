@@ -2,8 +2,8 @@
 name: implementing-identity-verification-for-zero-trust
 description: Implement continuous identity verification for zero trust using phishing-resistant MFA (FIDO2/WebAuthn), risk-based conditional access, and identity governance aligned with the CISA Zero Trust Maturity Model.
 domain: cybersecurity
-subdomain: security-operations
-tags: [cybersecurity]
+subdomain: zero-trust-architecture
+tags: [zero-trust, identity, authentication, mfa, identity-verification]
 version: "1.0"
 author: mahipal
 license: Apache-2.0
@@ -11,19 +11,12 @@ license: Apache-2.0
 
 # Implementing Identity Verification for Zero Trust
 
----
-domain: cybersecurity
-subdomain: zero-trust-architecture
-author: mahipal
-tags: [zero-trust, identity, authentication, mfa, identity-verification]
-difficulty: advanced
-estimated_time: 4-6 hours
-prerequisites:
-  - Understanding of zero trust principles (NIST SP 800-207)
-  - Familiarity with identity providers (Azure AD, Okta, Ping Identity)
-  - Knowledge of authentication protocols (SAML 2.0, OIDC, FIDO2)
-  - Understanding of MFA and passwordless authentication
----
+## Prerequisites
+
+- Understanding of zero trust principles (NIST SP 800-207)
+- Familiarity with identity providers (Azure AD, Okta, Ping Identity)
+- Knowledge of authentication protocols (SAML 2.0, OIDC, FIDO2)
+- Understanding of MFA and passwordless authentication
 
 ## Overview
 

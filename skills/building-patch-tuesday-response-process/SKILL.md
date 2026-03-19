@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Microsoft releases security updates on the second Tuesday of each month ("Patch Tuesday"), addressing vulnerabilities across Windows, Office, Exchange, SQL Server, Azure services, and other products. In 2025, Microsoft patched over 1,129 vulnerabilities across the year -- an 11.9% increase from 2024 -- making a structured response process critical. The leading risk types include elevation of privilege (49%), remote code execution (34%), and information disclosure (7%). This skill covers building a repeatable Patch Tuesday response workflow from initial advisory review through testing, deployment, and validation.
 
+
+## When to Use
+
+- When deploying or configuring building patch tuesday response process capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Access to Microsoft Security Response Center (MSRC) update guide
 - Vulnerability management platform (Qualys VMDR, Rapid7, Tenable)

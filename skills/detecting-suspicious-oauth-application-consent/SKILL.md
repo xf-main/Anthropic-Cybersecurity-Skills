@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Illicit consent grant attacks trick users into granting excessive permissions to malicious OAuth applications in Azure AD / Microsoft Entra ID. This skill uses the Microsoft Graph API to enumerate OAuth2 permission grants, analyze application permissions for overly broad scopes, review directory audit logs for consent events, and flag high-risk applications based on publisher verification status and permission scope.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting suspicious oauth application consent
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Azure AD / Entra ID tenant with Global Reader or Security Reader role

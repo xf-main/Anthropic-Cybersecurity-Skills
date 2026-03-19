@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Cobalt Strike Malleable C2 profiles are domain-specific language scripts that customize how Beacon communicates with the team server, defining HTTP request/response transformations, sleep intervals, jitter values, user agents, URI paths, and process injection behavior. Threat actors use malleable profiles to disguise C2 traffic as legitimate services (Amazon, Google, Slack). Analyzing these profiles reveals network indicators for detection: URI patterns, HTTP headers, POST/GET transforms, DNS settings, and process injection techniques. The `dissect.cobaltstrike` library can parse both profile files and extract configurations from beacon payloads, while `pyMalleableC2` provides AST-based parsing using Lark grammar for programmatic profile manipulation and validation.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing cobaltstrike malleable c2 profiles
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `dissect.cobaltstrike` and/or `pyMalleableC2`

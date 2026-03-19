@@ -14,6 +14,14 @@ license: Apache-2.0
 
 A sector-specific threat landscape assessment analyzes the cyber threat environment facing a particular industry vertical (healthcare, financial services, energy, government, manufacturing) by examining which threat actors target the sector, their preferred attack vectors and TTPs, common vulnerabilities exploited, historical incident data, and emerging threats. This produces actionable intelligence for risk management, security investment prioritization, and board-level reporting.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing threat landscape assessment for sector
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `attackcti`, `requests`, `pandas`, `matplotlib` libraries

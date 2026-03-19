@@ -15,6 +15,14 @@ license: Apache-2.0
 
 SCIM (System for Cross-domain Identity Management) is an open standard protocol (RFC 7644) that automates the exchange of user identity information between identity providers like Okta and service providers. This skill covers building a SCIM 2.0-compliant API endpoint and integrating it with Okta for automated user lifecycle management including provisioning, deprovisioning, profile updates, and group management.
 
+
+## When to Use
+
+- When deploying or configuring implementing scim provisioning with okta capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Okta tenant with admin access (Developer or Production)

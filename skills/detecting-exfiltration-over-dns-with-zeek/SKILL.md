@@ -18,6 +18,14 @@ DNS tunneling and exfiltration is a technique used by attackers to bypass firewa
 
 This skill analyzes Zeek dns.log files (TSV format) to detect exfiltration indicators. The agent computes Shannon entropy for each subdomain component, identifies queries exceeding the 63-character DNS label limit, counts unique subdomains per parent domain, and flags domains that exceed configurable thresholds. These techniques detect tools like dnscat2, iodine, dns2tcp, and custom DNS tunneling implementations.
 
+
+## When to Use
+
+- When investigating security incidents that require detecting exfiltration over dns with zeek
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9 or later with math and collections modules (stdlib)

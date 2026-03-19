@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Kubernetes penetration testing systematically evaluates cluster security by simulating attacker techniques against the API server, kubelet, etcd, pods, RBAC, network policies, and secrets. Using tools like kube-hunter, Kubescape, peirates, and manual kubectl exploitation, testers identify misconfigurations that could lead to cluster compromise.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing kubernetes penetration testing
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Authorized penetration testing engagement

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 The Stakeholder-Specific Vulnerability Categorization (SSVC) framework, developed by Carnegie Mellon University's Software Engineering Institute (SEI) in collaboration with CISA, provides a structured decision-tree methodology for vulnerability prioritization. Unlike CVSS alone, SSVC accounts for exploitation status, technical impact, automatability, mission prevalence, and public well-being impact to produce one of four actionable outcomes: **Track**, **Track***, **Attend**, or **Act**.
 
+
+## When to Use
+
+- When managing security operations that require triaging vulnerabilities with ssvc framework
+- When improving security program maturity and operational processes
+- When establishing standardized procedures for security team workflows
+- When integrating threat intelligence or vulnerability data into operations
+
 ## Prerequisites
 
 - Python 3.9+ with `requests`, `pandas`, and `jinja2` libraries

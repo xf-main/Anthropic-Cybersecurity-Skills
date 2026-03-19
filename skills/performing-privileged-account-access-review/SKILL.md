@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Privileged Account Access Review is a critical identity governance process that validates whether users with elevated permissions still require their access. This review covers domain admins, service accounts, database administrators, cloud IAM roles, and application-level privileged accounts. Regular access reviews are mandated by SOC 2, PCI DSS, HIPAA, and SOX compliance frameworks, typically required quarterly for high-privilege accounts.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing privileged account access review
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - PAM solution deployed (CyberArk, BeyondTrust, Delinea, or equivalent)

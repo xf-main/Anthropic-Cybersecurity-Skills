@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Network segmentation divides a flat network into isolated security zones with firewall-enforced boundaries to contain breaches, restrict lateral movement, and enforce least-privilege access between workloads. Segmentation is a foundational control required by PCI DSS, HIPAA, NIST 800-53, and zero trust architectures. Modern segmentation combines traditional VLAN-based approaches with microsegmentation at the workload level for granular east-west traffic control. This skill covers designing zone architectures, configuring inter-zone firewall policies, implementing VLAN segmentation on switches, and deploying microsegmentation for dynamic environments.
 
+
+## When to Use
+
+- When deploying or configuring implementing network segmentation with firewall zones capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Network topology documentation with asset inventory

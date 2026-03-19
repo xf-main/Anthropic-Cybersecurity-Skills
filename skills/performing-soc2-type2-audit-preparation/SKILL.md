@@ -14,6 +14,14 @@ license: Apache-2.0
 ## Overview
 SOC 2 Type II audit preparation involves designing, implementing, and demonstrating the operational effectiveness of controls aligned to the AICPA Trust Services Criteria (TSC) over a defined audit period (typically 6-12 months). Unlike Type I which assesses control design at a point in time, Type II evaluates whether controls operated effectively throughout the entire examination period.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing soc2 type2 audit preparation
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - Understanding of AICPA Trust Services Criteria (2017, updated 2022)
 - Knowledge of internal control frameworks (COSO 2013)

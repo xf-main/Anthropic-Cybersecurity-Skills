@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Palo Alto Networks Next-Generation Firewalls (NGFWs) move beyond traditional port-based rule enforcement to application-aware, identity-driven security policies. By leveraging App-ID for traffic classification, User-ID for identity-based enforcement, Content-ID for threat inspection, and SSL decryption for encrypted traffic visibility, organizations gain comprehensive control over network traffic. This skill covers end-to-end deployment from initial configuration through advanced threat prevention profiles.
 
+
+## When to Use
+
+- When deploying or configuring implementing next generation firewall with palo alto capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Palo Alto Networks PA-series appliance or VM-Series virtual firewall

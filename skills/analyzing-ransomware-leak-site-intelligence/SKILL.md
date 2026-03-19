@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Ransomware groups operating under double-extortion models maintain data leak sites (DLS) on Tor hidden services where they post victim names, stolen data samples, and countdown timers to pressure payment. In H1 2025, 96 unique ransomware groups were active, listing approximately 535 victims per month. Monitoring these sites provides intelligence on active threat groups, targeted sectors, geographic patterns, and emerging ransomware families. This skill covers safely collecting DLS intelligence, extracting structured data, tracking group activity trends, and producing sector-specific risk assessments.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing ransomware leak site intelligence
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `requests`, `beautifulsoup4`, `pandas`, `matplotlib` libraries

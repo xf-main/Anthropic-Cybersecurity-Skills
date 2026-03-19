@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Proofpoint Email Protection is a cloud-native secure email gateway (SEG) that acts as a security checkpoint where all inbound and outbound mail traffic routes through the gateway before reaching user inboxes. It combines signature-based detection for known malware, machine learning algorithms for emerging threats, real-time threat intelligence feeds, URL rewriting with time-of-click sandboxing, and behavioral analysis for BEC detection. Proofpoint processes over 2.8 billion emails daily and blocks over 1 million extortion attempts per day.
 
+
+## When to Use
+
+- When deploying or configuring implementing proofpoint email security gateway capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Proofpoint Email Protection license (PPS on-premises or Proofpoint on Demand cloud)
 - Administrative access to DNS management for MX record changes

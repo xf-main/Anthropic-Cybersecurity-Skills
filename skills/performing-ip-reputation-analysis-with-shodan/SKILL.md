@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Shodan is the world's first search engine for internet-connected devices, continuously scanning the IPv4 and IPv6 address space to catalog open ports, running services, SSL certificates, and known vulnerabilities. This skill covers using the Shodan API and InternetDB free API to enrich IP addresses from security alerts, assess threat levels based on exposed services and vulnerabilities, identify hosting infrastructure patterns, and integrate IP reputation data into SOC triage and threat intelligence workflows.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing ip reputation analysis with shodan
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `shodan` library (`pip install shodan`)

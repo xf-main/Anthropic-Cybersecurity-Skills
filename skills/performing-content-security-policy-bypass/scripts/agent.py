@@ -1,60 +1,312 @@
 #!/usr/bin/env python3
-"""CSP bypass testing agent."""
-import argparse, json
+"""Content Security Policy (CSP) analysis and bypass testing agent.
+
+Fetches and analyzes CSP headers from web applications to identify
+misconfigurations, overly permissive directives, and potential bypass
+vectors. Tests for unsafe-inline, unsafe-eval, wildcard sources,
+missing directives, and known CSP bypass patterns.
+
+AUTHORIZED TESTING ONLY: Only use against targets you have explicit
+written permission to test.
+"""
+import argparse
+import json
+import re
+import sys
 from datetime import datetime, timezone
+
 try:
     import requests
 except ImportError:
-    requests = None
+    print("[!] 'requests' library required: pip install requests", file=sys.stderr)
+    sys.exit(1)
 
-def run_scan(target, token=None):
+
+CSP_DIRECTIVES = [
+    "default-src", "script-src", "style-src", "img-src", "font-src",
+    "connect-src", "media-src", "object-src", "frame-src", "child-src",
+    "worker-src", "frame-ancestors", "form-action", "base-uri",
+    "manifest-src", "prefetch-src", "navigate-to",
+]
+
+
+def fetch_csp(url, headers=None, cookies=None):
+    """Fetch CSP header(s) from a URL."""
+    print(f"[*] Fetching CSP from {url}")
+    h = headers or {}
+    c = cookies or {}
+    resp = requests.get(url, headers=h, cookies=c, timeout=15, allow_redirects=True)
+    csp_header = resp.headers.get("Content-Security-Policy", "")
+    csp_ro = resp.headers.get("Content-Security-Policy-Report-Only", "")
+    print(f"[+] Status: {resp.status_code}")
+    if csp_header:
+        print(f"[+] CSP header found ({len(csp_header)} chars)")
+    else:
+        print("[!] No CSP header found")
+    if csp_ro:
+        print(f"[+] CSP-Report-Only header found ({len(csp_ro)} chars)")
+    return csp_header, csp_ro, resp.status_code
+
+
+def parse_csp(csp_string):
+    """Parse a CSP string into a structured dict."""
+    directives = {}
+    if not csp_string:
+        return directives
+    for part in csp_string.split(";"):
+        part = part.strip()
+        if not part:
+            continue
+        tokens = part.split()
+        if tokens:
+            directive_name = tokens[0].lower()
+            values = tokens[1:] if len(tokens) > 1 else []
+            directives[directive_name] = values
+    return directives
+
+
+def analyze_csp(directives, csp_string):
+    """Analyze CSP directives for security weaknesses."""
     findings = []
-    if not requests: return [{"error": "requests required"}]
-    headers = {"Authorization": f"Bearer {token}"} if token else {}
-    try:
-        resp = requests.get(f"{target}", headers=headers, timeout=15)
-        if resp.status_code == 200:
-            findings.append({"check": "Target Accessible", "status": "OK", "severity": "INFO"})
-        else:
-            findings.append({"check": "Target Access", "status": f"HTTP {resp.status_code}", "severity": "MEDIUM"})
-    except requests.RequestException as e:
-        findings.append({"error": str(e)})
+
+    # Missing CSP entirely
+    if not directives:
+        findings.append({
+            "check": "CSP Header Present",
+            "severity": "HIGH",
+            "status": "MISSING",
+            "description": "No Content-Security-Policy header",
+            "recommendation": "Implement a CSP header",
+        })
+        return findings
+
+    # Check for missing critical directives
+    if "default-src" not in directives:
+        findings.append({
+            "check": "default-src directive",
+            "severity": "HIGH",
+            "status": "MISSING",
+            "description": "No default-src fallback directive",
+            "recommendation": "Add default-src 'none' or default-src 'self'",
+        })
+
+    if "script-src" not in directives and "default-src" not in directives:
+        findings.append({
+            "check": "script-src directive",
+            "severity": "CRITICAL",
+            "status": "MISSING",
+            "description": "No script-src or default-src; scripts unrestricted",
+        })
+
+    if "object-src" not in directives:
+        findings.append({
+            "check": "object-src directive",
+            "severity": "MEDIUM",
+            "status": "MISSING",
+            "description": "Missing object-src; plugin-based XSS possible",
+            "recommendation": "Add object-src 'none'",
+        })
+
+    if "base-uri" not in directives:
+        findings.append({
+            "check": "base-uri directive",
+            "severity": "MEDIUM",
+            "status": "MISSING",
+            "description": "Missing base-uri; base tag injection possible",
+            "recommendation": "Add base-uri 'self' or base-uri 'none'",
+        })
+
+    if "frame-ancestors" not in directives:
+        findings.append({
+            "check": "frame-ancestors directive",
+            "severity": "MEDIUM",
+            "status": "MISSING",
+            "description": "Missing frame-ancestors; clickjacking possible",
+            "recommendation": "Add frame-ancestors 'self'",
+        })
+
+    # Analyze each directive
+    for directive, values in directives.items():
+        values_str = " ".join(values)
+
+        # unsafe-inline
+        if "'unsafe-inline'" in values:
+            sev = "CRITICAL" if directive in ("script-src", "default-src") else "MEDIUM"
+            findings.append({
+                "check": f"unsafe-inline in {directive}",
+                "severity": sev,
+                "status": "FAIL",
+                "description": f"'unsafe-inline' allows inline scripts/styles in {directive}",
+                "bypass": "Inject inline <script> or event handlers",
+            })
+
+        # unsafe-eval
+        if "'unsafe-eval'" in values:
+            findings.append({
+                "check": f"unsafe-eval in {directive}",
+                "severity": "CRITICAL" if directive in ("script-src", "default-src") else "HIGH",
+                "status": "FAIL",
+                "description": f"'unsafe-eval' allows eval() and similar in {directive}",
+                "bypass": "Use eval(), Function(), setTimeout('string') for XSS",
+            })
+
+        # Wildcard sources
+        if "*" in values:
+            findings.append({
+                "check": f"Wildcard (*) in {directive}",
+                "severity": "HIGH",
+                "status": "FAIL",
+                "description": f"Wildcard source in {directive} allows loading from any origin",
+                "bypass": "Host payload on any domain",
+            })
+
+        # data: URI
+        if "data:" in values and directive in ("script-src", "default-src", "object-src"):
+            findings.append({
+                "check": f"data: URI in {directive}",
+                "severity": "HIGH",
+                "status": "FAIL",
+                "description": f"data: URI in {directive} allows inline data execution",
+                "bypass": "Use data:text/html payload or data:application/javascript",
+            })
+
+        # blob: URI
+        if "blob:" in values and directive in ("script-src", "default-src", "worker-src"):
+            findings.append({
+                "check": f"blob: URI in {directive}",
+                "severity": "MEDIUM",
+                "status": "FAIL",
+                "description": f"blob: URI in {directive} may allow bypass via Blob URLs",
+            })
+
+        # Known bypass CDNs
+        bypass_cdns = ["cdn.jsdelivr.net", "cdnjs.cloudflare.com", "unpkg.com",
+                       "ajax.googleapis.com", "raw.githubusercontent.com"]
+        for cdn in bypass_cdns:
+            if cdn in values_str:
+                findings.append({
+                    "check": f"Bypassable CDN in {directive}",
+                    "severity": "HIGH",
+                    "status": "FAIL",
+                    "description": f"{cdn} in {directive} can host arbitrary scripts",
+                    "bypass": f"Upload/find malicious script on {cdn}",
+                })
+
+        # http: in HTTPS context
+        if any(v.startswith("http:") for v in values):
+            findings.append({
+                "check": f"HTTP source in {directive}",
+                "severity": "MEDIUM",
+                "status": "FAIL",
+                "description": f"HTTP source allows MitM injection in {directive}",
+            })
+
     return findings
 
-def analyze_results(target, token=None):
-    findings = []
-    if not requests: return []
-    headers = {"Authorization": f"Bearer {token}"} if token else {}
-    try:
-        resp = requests.get(f"{target}/api/v1/results", headers=headers, timeout=15)
-        if resp.status_code == 200:
-            data = resp.json()
-            for item in data.get("findings", data.get("results", [])):
-                severity = item.get("severity", item.get("risk", "MEDIUM"))
-                findings.append({"check": item.get("name", item.get("title", "unknown")),
-                                 "severity": severity.upper() if isinstance(severity, str) else "MEDIUM"})
-    except requests.RequestException:
-        pass
-    return findings
+
+def format_summary(url, directives, findings, csp_string):
+    """Print analysis summary."""
+    print(f"\n{'='*60}")
+    print(f"  CSP Analysis Report")
+    print(f"{'='*60}")
+    print(f"  URL           : {url}")
+    print(f"  Directives    : {len(directives)}")
+    print(f"  Findings      : {len(findings)}")
+
+    severity_counts = {}
+    for f in findings:
+        sev = f.get("severity", "INFO")
+        severity_counts[sev] = severity_counts.get(sev, 0) + 1
+
+    print(f"\n  By Severity:")
+    for sev in ["CRITICAL", "HIGH", "MEDIUM", "LOW", "INFO"]:
+        count = severity_counts.get(sev, 0)
+        if count > 0:
+            print(f"    {sev:10s}: {count}")
+
+    if directives:
+        print(f"\n  Parsed Directives:")
+        for d, v in directives.items():
+            print(f"    {d:20s}: {' '.join(v)[:60]}")
+
+    if findings:
+        print(f"\n  Security Issues:")
+        for f in findings:
+            if f["severity"] in ("CRITICAL", "HIGH"):
+                bypass = f" | Bypass: {f['bypass']}" if f.get("bypass") else ""
+                print(f"    [{f['severity']:8s}] {f['check']}{bypass}")
+
+    return severity_counts
+
 
 def main():
-    p = argparse.ArgumentParser(description="CSP bypass testing agent")
-    p.add_argument("--target", required=True, help="Target URL or IP")
-    p.add_argument("--token", help="API token")
-    p.add_argument("--output", "-o", help="Output JSON report")
-    p.add_argument("--verbose", "-v", action="store_true")
-    a = p.parse_args()
-    print("[*] CSP bypass testing agent")
-    report = {"timestamp": datetime.now(timezone.utc).isoformat(), "target": a.target, "findings": []}
-    report["findings"].extend(run_scan(a.target, a.token))
-    report["findings"].extend(analyze_results(a.target, a.token))
-    high = sum(1 for f in report["findings"] if f.get("severity") in ("HIGH", "CRITICAL"))
-    report["risk_level"] = "CRITICAL" if high > 2 else "HIGH" if high else "MEDIUM" if report["findings"] else "LOW"
-    print(f"[*] {len(report['findings'])} findings, risk: {report['risk_level']}")
-    if a.output:
-        with open(a.output, "w") as f: json.dump(report, f, indent=2)
+    parser = argparse.ArgumentParser(
+        description="CSP analysis and bypass testing agent (authorized testing only)"
+    )
+    parser.add_argument("--url", required=True, help="Target URL to fetch CSP from")
+    parser.add_argument("--csp-string", help="Analyze a CSP string directly instead of fetching")
+    parser.add_argument("--header", nargs="+", help="Custom headers (key:value)")
+    parser.add_argument("--cookie", help="Cookie string")
+    parser.add_argument("--output", "-o", help="Output JSON report path")
+    parser.add_argument("--verbose", "-v", action="store_true")
+    args = parser.parse_args()
+
+    if args.csp_string:
+        csp_string = args.csp_string
+        csp_ro = ""
+        status_code = 0
     else:
+        headers = {}
+        if args.header:
+            for h in args.header:
+                k, v = h.split(":", 1)
+                headers[k.strip()] = v.strip()
+        cookies = {}
+        if args.cookie:
+            for pair in args.cookie.split(";"):
+                if "=" in pair:
+                    k, v = pair.strip().split("=", 1)
+                    cookies[k] = v
+        csp_string, csp_ro, status_code = fetch_csp(args.url, headers or None, cookies or None)
+
+    directives = parse_csp(csp_string)
+    findings = analyze_csp(directives, csp_string)
+
+    if csp_ro:
+        ro_directives = parse_csp(csp_ro)
+        findings.append({
+            "check": "CSP-Report-Only mode",
+            "severity": "MEDIUM",
+            "status": "WARN",
+            "description": "CSP in report-only mode does not enforce restrictions",
+        })
+
+    severity_counts = format_summary(args.url, directives, findings, csp_string)
+
+    report = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "tool": "CSP Analyzer",
+        "url": args.url,
+        "csp_header": csp_string,
+        "csp_report_only": csp_ro,
+        "directives": {k: v for k, v in directives.items()},
+        "findings": findings,
+        "severity_counts": severity_counts,
+        "risk_level": (
+            "CRITICAL" if severity_counts.get("CRITICAL", 0) > 0
+            else "HIGH" if severity_counts.get("HIGH", 0) > 0
+            else "MEDIUM" if severity_counts.get("MEDIUM", 0) > 0
+            else "LOW"
+        ),
+    }
+
+    if args.output:
+        with open(args.output, "w") as f:
+            json.dump(report, f, indent=2)
+        print(f"\n[+] Report saved to {args.output}")
+    elif args.verbose:
         print(json.dumps(report, indent=2))
+
 
 if __name__ == "__main__":
     main()

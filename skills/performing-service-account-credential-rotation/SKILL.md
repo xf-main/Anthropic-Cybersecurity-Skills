@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Service accounts are non-human identities used by applications, daemons, CI/CD pipelines, and automated processes to authenticate to systems and APIs. These accounts often have elevated privileges and their credentials (passwords, API keys, certificates, tokens) are frequently long-lived and shared across teams, making them prime targets for attackers. Credential rotation is the systematic process of replacing these secrets on a scheduled basis, propagating new credentials to all dependent systems, and verifying service continuity after rotation.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing service account credential rotation
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Inventory of all service accounts across AD, cloud, and applications

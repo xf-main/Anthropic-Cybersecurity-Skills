@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Docker Bench for Security is an open-source script that checks dozens of common best practices around deploying Docker containers in production. Based on the CIS Docker Benchmark, it audits host configuration, Docker daemon settings, container images, runtime configurations, and security operations to generate a compliance report with pass/fail/warn results.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing docker bench security assessment
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Docker Engine installed and running

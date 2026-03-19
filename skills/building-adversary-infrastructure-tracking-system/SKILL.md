@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Adversary infrastructure tracking uses passive DNS records, certificate transparency logs, WHOIS registration data, and IP enrichment to discover, map, and monitor threat actor command-and-control (C2) networks. Attackers frequently reuse hosting providers, registrars, SSL certificates, and naming patterns across campaigns, enabling analysts to pivot from known indicators to discover new infrastructure. This skill covers building an automated tracking system that identifies infrastructure relationships, detects newly registered domains matching adversary patterns, and maintains a continuously updated map of threat actor networks.
 
+
+## When to Use
+
+- When deploying or configuring building adversary infrastructure tracking system capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9+ with `requests`, `dnspython`, `python-whois`, `shodan`, `networkx` libraries

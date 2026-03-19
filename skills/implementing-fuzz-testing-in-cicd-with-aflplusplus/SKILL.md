@@ -15,6 +15,14 @@ license: Apache-2.0
 
 AFL++ (American Fuzzy Lop Plus Plus) is a community-maintained fork of AFL that provides state-of-the-art coverage-guided fuzz testing for discovering vulnerabilities in compiled applications. AFL++ uses genetic algorithms to mutate inputs, tracking code coverage to find new execution paths that trigger crashes, hangs, and undefined behavior. In CI/CD environments, AFL++ can be integrated to continuously test parsers, protocol handlers, file format processors, and any code that handles untrusted input. AFL++ supports persistent mode for high-speed fuzzing (up to 100,000+ executions per second), custom mutators, QEMU mode for binary-only fuzzing, and CmpLog/RedQueen for automatic dictionary extraction.
 
+
+## When to Use
+
+- When deploying or configuring implementing fuzz testing in cicd with aflplusplus capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Linux-based CI runners (AFL++ does not support Windows natively)

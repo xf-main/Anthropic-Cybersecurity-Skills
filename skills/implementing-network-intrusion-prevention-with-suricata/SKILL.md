@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Suricata is a high-performance, open-source network threat detection engine developed by the Open Information Security Foundation (OISF). It functions as an IDS (Intrusion Detection System), IPS (Intrusion Prevention System), and network security monitoring tool. Suricata performs deep packet inspection using extensive rule sets, protocol analysis, and file extraction capabilities. In IPS mode, Suricata inspects packets inline and can actively block malicious traffic. This skill covers deploying Suricata in IPS mode, configuring rulesets, writing custom rules, performance tuning, and integration with logging infrastructure.
 
+
+## When to Use
+
+- When deploying or configuring implementing network intrusion prevention with suricata capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Linux server (Ubuntu 22.04+ or CentOS 8+) with 4+ CPU cores and 8GB+ RAM

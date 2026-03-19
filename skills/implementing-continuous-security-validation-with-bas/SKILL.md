@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Breach and Attack Simulation (BAS) is an automated, continuous approach to validating security control effectiveness by safely executing real-world attack techniques against production security infrastructure. Unlike traditional penetration testing (point-in-time), BAS platforms continuously simulate threats mapped to MITRE ATT&CK, testing endpoint protection, network security, email gateways, SIEM detection, and incident response capabilities. Leading platforms include SafeBreach, AttackIQ, Picus Security (2024 Gartner Customers' Choice), Cymulate, Pentera, and SCYTHE. BAS 2.0 solutions safely emulate real attacker behavior across the entire IT environment without requiring pre-deployed agents on every endpoint.
 
+
+## When to Use
+
+- When deploying or configuring implementing continuous security validation with bas capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - BAS platform license (SafeBreach, AttackIQ, Picus, Cymulate, or Pentera)
 - Deployed security controls to validate (EDR, NGFW, email gateway, SIEM, WAF)

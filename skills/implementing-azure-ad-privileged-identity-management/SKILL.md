@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Microsoft Entra Privileged Identity Management (PIM) provides time-based and approval-based role activation to mitigate risks from excessive, unnecessary, or misused access to critical resources. PIM replaces permanent (standing) privilege assignments with eligible assignments that require users to explicitly activate their role before use, with configurable duration, MFA enforcement, approval workflows, and justification requirements. This is a core component of Zero Trust identity governance in Microsoft environments.
 
+
+## When to Use
+
+- When deploying or configuring implementing azure ad privileged identity management capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Microsoft Entra ID P2 or Microsoft Entra ID Governance license

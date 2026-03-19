@@ -18,6 +18,14 @@ This skill implements a phishing incident response workflow using the Splunk SOA
 
 Splunk SOAR orchestrates and automates security operations through playbooks that chain together investigative and response actions. The REST API at `/rest/container`, `/rest/artifact`, and `/rest/playbook_run` enables programmatic incident creation and automation triggering from external tools, email gateways, and SIEM alerts.
 
+
+## When to Use
+
+- When deploying or configuring implementing soar playbook for phishing capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9 or later with `requests` and `email` modules

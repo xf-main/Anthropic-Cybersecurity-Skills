@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Google BeyondCorp Enterprise implements the zero trust security model by eliminating the concept of a trusted network perimeter. Instead of relying on VPNs and network location, BeyondCorp authenticates and authorizes every request based on user identity, device posture, and contextual attributes. Identity-Aware Proxy (IAP) serves as the enforcement point, intercepting all requests to protected resources and evaluating them against Access Context Manager policies. This skill covers configuring IAP for web applications, defining access levels based on device trust and network attributes, and auditing access policies for compliance.
 
+
+## When to Use
+
+- When deploying or configuring implementing zero trust with beyondcorp capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Google Cloud project with BeyondCorp Enterprise license

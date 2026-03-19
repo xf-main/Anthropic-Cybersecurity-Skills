@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Before and during ransomware execution, adversaries establish C2 channels, exfiltrate data, and download encryption keys. This skill analyzes Zeek conn.log and NetFlow data to detect beaconing patterns (regular-interval callbacks), connections to known TOR exit nodes, large outbound data transfers, and suspicious DNS activity associated with ransomware families.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing ransomware network indicators
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Zeek conn.log files or NetFlow CSV/JSON exports

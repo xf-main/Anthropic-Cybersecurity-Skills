@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Kismet is an open-source wireless network detector, packet sniffer, and wireless intrusion detection system (WIDS) supporting 802.11a/b/g/n/ac/ax. Unlike active scanners, Kismet operates in passive monitor mode, making it undetectable to the networks being assessed. It captures raw 802.11 frames, identifies access points, clients, probe requests, and encryption types without transmitting any packets. This skill covers deploying Kismet for comprehensive wireless security assessments, identifying rogue access points, detecting weak encryption, mapping hidden networks, and analyzing client behavior.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing wireless security assessment with kismet
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Linux system (Kali Linux, Ubuntu 22.04+) with Kismet 2023+ installed

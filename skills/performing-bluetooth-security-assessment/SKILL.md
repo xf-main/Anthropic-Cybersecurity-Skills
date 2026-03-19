@@ -18,6 +18,14 @@ This skill covers performing Bluetooth Low Energy (BLE) security assessments usi
 
 The agent uses bleak's asyncio API to discover nearby BLE devices, connect to target devices, enumerate all GATT services and characteristics, and analyze security properties of each characteristic. It flags characteristics that allow unauthenticated read/write access to sensitive data and identifies devices matching known vulnerable profiles.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing bluetooth security assessment
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9 or later

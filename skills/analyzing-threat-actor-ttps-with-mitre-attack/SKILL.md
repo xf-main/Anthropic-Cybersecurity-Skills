@@ -14,6 +14,14 @@ license: Apache-2.0
 
 MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics, techniques, and procedures (TTPs) based on real-world observations. This skill covers systematically mapping threat actor behavior to the ATT&CK framework, building technique coverage heatmaps using the ATT&CK Navigator, identifying detection gaps, and producing actionable intelligence reports that link observed IOCs to specific adversary techniques across the Enterprise, Mobile, and ICS matrices.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing threat actor ttps with mitre attack
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `mitreattack-python`, `attackcti`, `stix2` libraries

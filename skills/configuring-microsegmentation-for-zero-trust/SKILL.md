@@ -2,8 +2,8 @@
 name: configuring-microsegmentation-for-zero-trust
 description: Configure microsegmentation policies to enforce least-privilege workload-to-workload access using tools like VMware NSX, Illumio, and Calico, preventing lateral movement in zero trust architectures.
 domain: cybersecurity
-subdomain: security-operations
-tags: [cybersecurity]
+subdomain: zero-trust-architecture
+tags: [zero-trust, microsegmentation, network-access, lateral-movement, network-security]
 version: "1.0"
 author: mahipal
 license: Apache-2.0
@@ -11,19 +11,12 @@ license: Apache-2.0
 
 # Configuring Microsegmentation for Zero Trust
 
----
-domain: cybersecurity
-subdomain: zero-trust-architecture
-author: mahipal
-tags: [zero-trust, microsegmentation, network-access, lateral-movement, network-security]
-difficulty: advanced
-estimated_time: 4-6 hours
-prerequisites:
-  - Understanding of zero trust principles (NIST SP 800-207)
-  - Knowledge of network segmentation concepts
-  - Familiarity with firewall and SDN technologies
-  - Experience with VMware NSX, Illumio, Guardicore, or Cisco ACI
----
+## Prerequisites
+
+- Understanding of zero trust principles (NIST SP 800-207)
+- Knowledge of network segmentation concepts
+- Familiarity with firewall and SDN technologies
+- Experience with VMware NSX, Illumio, Guardicore, or Cisco ACI
 
 ## Overview
 

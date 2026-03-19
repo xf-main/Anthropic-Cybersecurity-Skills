@@ -14,6 +14,14 @@ license: Apache-2.0
 
 IOC defanging modifies potentially malicious indicators (URLs, IP addresses, domains, email addresses) to prevent accidental clicks or execution while preserving readability for analysis and sharing. This skill covers building an automated pipeline that ingests raw IOCs from multiple sources, normalizes and deduplicates them, applies defanging for safe human consumption, converts them to STIX 2.1 format for machine consumption, and distributes through TAXII servers, MISP instances, and email reports.
 
+
+## When to Use
+
+- When deploying or configuring building ioc defanging and sharing pipeline capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Python 3.9+ with `defang`, `ioc-fanger`, `stix2`, `requests`, `validators` libraries

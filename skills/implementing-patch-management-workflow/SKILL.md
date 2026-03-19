@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Patch management is the systematic process of identifying, testing, deploying, and verifying software updates to remediate vulnerabilities across an organization's IT infrastructure. An effective patch management workflow reduces the attack surface while minimizing operational disruption through structured testing, approval gates, and phased rollouts.
 
+
+## When to Use
+
+- When deploying or configuring implementing patch management workflow capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Vulnerability scan results identifying missing patches
 - Patch management tools (WSUS, SCCM/MECM, Ansible, Intune, Jamf)

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Certificate Transparency (CT) is an Internet security standard that creates a public, append-only log of all issued SSL/TLS certificates. Monitoring CT logs enables early detection of phishing domains that register certificates mimicking legitimate brands, unauthorized certificate issuance for owned domains, and certificate-based attack infrastructure. This skill covers querying CT logs via crt.sh, real-time monitoring with Certstream, building automated alerting for suspicious certificates, and integrating findings into threat intelligence workflows.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing certificate transparency for phishing
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `requests`, `certstream`, `tldextract`, `Levenshtein` libraries

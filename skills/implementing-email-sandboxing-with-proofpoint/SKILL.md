@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Email sandboxing detonates suspicious attachments and URLs in isolated environments to detect zero-day malware and evasive phishing payloads. Proofpoint Targeted Attack Protection (TAP) is an industry-leading solution that uses multi-stage sandboxing, URL rewriting, and predictive analysis. This skill covers configuring Proofpoint TAP, integrating with email flow, analyzing sandbox reports, and tuning detection policies.
 
+
+## When to Use
+
+- When deploying or configuring implementing email sandboxing with proofpoint capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Proofpoint Email Protection license with TAP add-on
 - Admin access to Proofpoint admin console

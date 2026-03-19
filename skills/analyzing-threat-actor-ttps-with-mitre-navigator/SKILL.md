@@ -23,6 +23,14 @@ Combined with the attackcti Python library (which queries ATT&CK STIX data via T
 can programmatically generate Navigator layer files mapping specific threat group TTPs, compare
 multiple groups, and assess detection coverage gaps against known adversaries.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing threat actor ttps with mitre navigator
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.8+ with attackcti and stix2 libraries installed

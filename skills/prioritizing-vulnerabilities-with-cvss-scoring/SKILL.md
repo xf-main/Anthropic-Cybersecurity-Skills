@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 The Common Vulnerability Scoring System (CVSS) is the industry standard framework maintained by FIRST (Forum of Incident Response and Security Teams) for assessing vulnerability severity. CVSS v4.0 (released November 2023) introduces refined metrics for more accurate scoring. This skill covers calculating CVSS scores, interpreting vector strings, and using CVSS alongside contextual factors like EPSS and CISA KEV for effective vulnerability prioritization.
 
+
+## When to Use
+
+- When managing security operations that require prioritizing vulnerabilities with cvss scoring
+- When improving security program maturity and operational processes
+- When establishing standardized procedures for security team workflows
+- When integrating threat intelligence or vulnerability data into operations
+
 ## Prerequisites
 - Understanding of common vulnerability types (buffer overflow, injection, XSS, etc.)
 - Familiarity with networking concepts (attack vectors, protocols)

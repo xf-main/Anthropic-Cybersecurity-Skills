@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 Nikto is an open-source web server and web application scanner that tests against over 7,000 potentially dangerous files/programs, checks for outdated versions of over 1,250 servers, and identifies version-specific problems on over 270 servers. It performs comprehensive tests including XSS, SQL injection, server misconfigurations, default credentials, and known vulnerable CGI scripts.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing web application scanning with nikto
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 - Nikto installed (Perl-based, included in Kali Linux)
 - Written authorization to scan target web servers

@@ -15,6 +15,14 @@ license: Apache-2.0
 
 AIDE (Advanced Intrusion Detection Environment) is a host-based intrusion detection system that monitors file and directory integrity using cryptographic checksums. This skill covers generating AIDE configuration files, initializing baseline databases, running integrity checks, parsing change reports, and setting up automated cron-based monitoring with alerting.
 
+
+## When to Use
+
+- When deploying or configuring implementing file integrity monitoring with aide capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - AIDE installed on target Linux system (apt install aide / yum install aide)

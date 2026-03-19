@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Paste sites (Pastebin, GitHub Gists, Ghostbin, Dpaste, Hastebin) are frequently used as staging areas for leaked credentials, database dumps, API keys, and sensitive data before wider distribution on dark web forums and Telegram channels. Monitoring these sites provides early breach detection, enabling organizations to respond before stolen data is weaponized. This skill covers building automated paste site monitors using the Pastebin Scraping API, keyword-based alerting, credential pattern matching, and integration with incident response workflows.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing paste site monitoring for credentials
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - Python 3.9+ with `requests`, `beautifulsoup4`, `regex`, `pymisp` libraries

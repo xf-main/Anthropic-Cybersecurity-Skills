@@ -15,6 +15,14 @@ license: Apache-2.0
 
 Identity federation enables users authenticated by one identity provider to access resources managed by another without maintaining separate credentials. This skill covers establishing SAML 2.0 federation between an organization's on-premises Active Directory (via AD FS or third-party IdP) and Microsoft Entra ID (formerly Azure AD), as well as configuring federated SSO for third-party SaaS applications. Federation eliminates password synchronization concerns and keeps authentication authority on-premises while extending SSO to cloud resources.
 
+
+## When to Use
+
+- When deploying or configuring building identity federation with saml azure ad capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - On-premises Active Directory domain

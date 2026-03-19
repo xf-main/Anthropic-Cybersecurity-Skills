@@ -13,6 +13,14 @@ license: Apache-2.0
 ## Overview
 A phishing reporting button empowers users to flag suspicious emails directly from their email client, creating a critical feedback loop between end users and the security operations center. Microsoft's built-in Report button is now the recommended approach, replacing the deprecated Report Message and Report Phishing add-ins. When combined with automated triage using SOAR platforms, reported emails can be classified, IOCs extracted, and remediation actions taken within minutes. Organizations with effective phishing reporting programs see 70%+ report rates in phishing simulations.
 
+
+## When to Use
+
+- When deploying or configuring building phishing reporting button workflow capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 - Microsoft 365 or Google Workspace with administrative access
 - SOAR platform or automation capability (Microsoft Sentinel, Splunk SOAR, Cortex XSOAR)

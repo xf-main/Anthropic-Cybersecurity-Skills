@@ -15,6 +15,14 @@ license: Apache-2.0
 
 A Privileged Access Workstation (PAW) is a hardened device dedicated to performing sensitive administrative tasks. This skill covers PAW design using the tiered administration model, device compliance enforcement via Microsoft Intune or Group Policy, just-in-time (JIT) access provisioning, and integration with privileged access management (PAM) platforms like CyberArk and BeyondTrust.
 
+
+## When to Use
+
+- When deploying or configuring implementing privileged access workstation capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Windows 10/11 Enterprise with Virtualization Based Security (VBS)

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Agent Tesla is a .NET-based Remote Access Trojan (RAT) and keylogger that ranked among the top 10 malware variants in 2024, impacting 6.3% of corporate networks globally. It exfiltrates stolen credentials via SMTP email, FTP upload, Telegram bot API, or Discord webhooks. The malware configuration is embedded in the .NET assembly, typically obfuscated using string encryption, resource encryption, or custom loaders that decrypt and execute Agent Tesla in memory via .NET Reflection (fileless). Configuration extraction involves decompiling the .NET assembly with dnSpy or ILSpy, identifying the decryption routine for configuration strings, and extracting SMTP server addresses, credentials, FTP endpoints, Telegram bot tokens, and targeted applications.
 
+
+## When to Use
+
+- When performing authorized security testing that involves extracting config from agent tesla rat
+- When analyzing malware samples or attack artifacts in a controlled environment
+- When conducting red team exercises or penetration testing engagements
+- When building detection capabilities based on offensive technique understanding
+
 ## Prerequisites
 
 - dnSpy or ILSpy for .NET decompilation

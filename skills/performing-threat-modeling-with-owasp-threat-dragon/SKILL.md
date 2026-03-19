@@ -15,6 +15,14 @@ license: Apache-2.0
 
 OWASP Threat Dragon is an open-source threat modeling tool that enables security teams and developers to create threat model diagrams, identify threats using established methodologies (STRIDE, LINDDUN, CIA, DIE, PLOT4ai), and generate comprehensive reports. Threat Dragon runs as both a web application and desktop application (Windows, macOS, Linux), supporting distributed teams working collaboratively on threat models. Version 2.x provides drag-and-drop diagram creation, an auto-generation rule engine for threats and mitigations, and PDF report output for documentation and GRC compliance.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing threat modeling with owasp threat dragon
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - OWASP Threat Dragon desktop application or web instance

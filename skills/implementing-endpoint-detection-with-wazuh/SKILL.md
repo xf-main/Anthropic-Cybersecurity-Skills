@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Wazuh is an open-source SIEM and XDR platform for endpoint monitoring, threat detection, and compliance. This skill covers managing agents via the Wazuh REST API, creating custom decoders and rules in XML for organization-specific detections, querying alerts, and testing rule logic using the logtest endpoint.
 
+
+## When to Use
+
+- When deploying or configuring implementing endpoint detection with wazuh capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Wazuh Manager 4.x deployed with API enabled

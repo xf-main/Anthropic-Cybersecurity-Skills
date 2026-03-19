@@ -21,6 +21,14 @@ license: Apache-2.0
 
 SpiderFoot is an open-source OSINT automation tool with 200+ modules that integrates with data sources for threat intelligence and attack surface mapping. This skill uses the SpiderFoot REST API and CLI (sf.py/spiderfoot-cli) to create and manage scans, select modules by use case (footprint, investigate, passive), parse structured results for domains, IPs, email addresses, leaked credentials, and DNS records, and generate target intelligence profiles.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing osint with spiderfoot
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - SpiderFoot 4.0+ installed or SpiderFoot HX cloud account

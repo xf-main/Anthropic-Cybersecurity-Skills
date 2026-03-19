@@ -14,6 +14,14 @@ license: Apache-2.0
 
 MISP (Malware Information Sharing Platform) is an open-source threat intelligence platform for gathering, sharing, storing, and correlating Indicators of Compromise (IOCs) of targeted attacks, threat intelligence, financial fraud information, vulnerability information, or counter-terrorism information. This skill covers deploying MISP, configuring threat feeds, using the PyMISP API for programmatic access, and building automated collection pipelines that aggregate IOCs from multiple community and commercial sources.
 
+
+## When to Use
+
+- When managing security operations that require collecting threat intelligence with misp
+- When improving security program maturity and operational processes
+- When establishing standardized procedures for security team workflows
+- When integrating threat intelligence or vulnerability data into operations
+
 ## Prerequisites
 
 - Python 3.9+ with `pymisp` library installed

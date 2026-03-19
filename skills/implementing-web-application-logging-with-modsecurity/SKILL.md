@@ -23,6 +23,14 @@ Core Rule Set (CRS) provides generic attack detection rules covering SQL injecti
 RCE, LFI, and other OWASP Top 10 attacks. ModSecurity logs full request/response data in
 audit logs for forensic analysis and generates alerts that feed into SIEM platforms.
 
+
+## When to Use
+
+- When deploying or configuring implementing web application logging with modsecurity capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Web server (Apache 2.4+ or Nginx) with ModSecurity v3 module

@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Harbor is an open-source container registry that provides security features including vulnerability scanning (integrated Trivy), image signing (Notary/Cosign), RBAC, content trust policies, replication, and audit logging. Securing Harbor involves configuring these features to enforce image provenance, prevent vulnerable image deployment, and maintain registry access control.
 
+
+## When to Use
+
+- When deploying or configuring securing container registry with harbor capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Harbor 2.10+ installed (Helm or Docker Compose)

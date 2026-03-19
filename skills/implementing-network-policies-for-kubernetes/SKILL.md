@@ -14,6 +14,14 @@ license: Apache-2.0
 
 Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plugins like Calico or Cilium, network policies enforce zero-trust microsegmentation to prevent lateral movement within the cluster.
 
+
+## When to Use
+
+- When deploying or configuring implementing network policies for kubernetes capabilities in your environment
+- When establishing security controls aligned to compliance requirements
+- When building or improving security architecture for this domain
+- When conducting security assessments that require this implementation
+
 ## Prerequisites
 
 - Kubernetes cluster with NetworkPolicy-supporting CNI (Calico, Cilium, Antrea)

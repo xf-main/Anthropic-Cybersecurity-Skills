@@ -14,6 +14,14 @@ license: Apache-2.0
 
 MITRE ATT&CK Navigator is a web-based tool for annotating and exploring ATT&CK matrices, enabling analysts to visualize threat actor technique coverage, compare multiple APT groups, identify detection gaps, and build threat-informed defense strategies. This skill covers querying ATT&CK data programmatically, mapping APT group TTPs to Navigator layers, creating multi-layer overlays for gap analysis, and generating actionable intelligence reports for detection engineering teams.
 
+
+## When to Use
+
+- When investigating security incidents that require analyzing apt group with mitre navigator
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
 ## Prerequisites
 
 - Python 3.9+ with `attackcti`, `mitreattack-python`, `stix2`, `requests` libraries

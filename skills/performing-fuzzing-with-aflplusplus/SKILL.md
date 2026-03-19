@@ -24,6 +24,14 @@ for binary-only fuzzing, then mutates input corpora to discover new code paths. 
 advanced scheduling (MOpt, rare), custom mutators, CMPLOG for input-to-state comparison solving,
 and persistent mode for high-throughput fuzzing.
 
+
+## When to Use
+
+- When conducting security assessments that involve performing fuzzing with aflplusplus
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
 ## Prerequisites
 
 - AFL++ installed (`apt install afl++` or build from source)
