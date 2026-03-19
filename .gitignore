@@ -13,3 +13,4 @@ Thumbs.db
 *.swp
 launch/
 extract_attack.py
+AUDIT_REPORT.md
