@@ -1,19 +1,19 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-11T00:43:13Z",
+  "generated_at": "2026-03-19T08:57:28Z",
   "repository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-  "total_skills": 734,
+  "total_skills": 735,
   "total_domains": 1,
   "total_subdomains": 36,
   "domain_stats": {
-    "cybersecurity": 734
+    "cybersecurity": 735
   },
   "subdomain_stats": {
     "digital-forensics": 37,
     "identity-security": 2,
     "malware-analysis": 39,
     "security-operations": 36,
-    "threat-intelligence": 50,
+    "threat-intelligence": 51,
     "cloud-security": 60,
     "soc-operations": 33,
     "blockchain-security": 1,
@@ -9686,6 +9686,17 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-agentless-vulnerability-scanning"
+    },
+    {
+      "name": "performing-ai-driven-osint-correlation",
+      "description": ">-",
+      "domain": "cybersecurity",
+      "subdomain": "threat-intelligence",
+      "tags": [],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-ai-driven-osint-correlation"
     },
     {
       "name": "performing-alert-triage-with-elastic-siem",
