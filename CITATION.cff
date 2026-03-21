@@ -11,8 +11,7 @@ abstract: >
   Claude Code, GitHub Copilot, Cursor, Windsurf, Gemini CLI, and 20+ AI agent
   platforms.
 authors:
-  - family-names: "Jangra"
-    given-names: "Mahipal"
+  - name: "Mahipal"
     email: mukuljangra5@gmail.com
     alias: mukul975
 repository-code: "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
